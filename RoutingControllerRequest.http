@@ -1,0 +1,31 @@
+
+### Variables
+@host = http://localhost:8080
+
+### Happy path - Route from Czech Republic to Italy
+GET {{host}}/routing/CZE/ITA
+Accept: application/json
+
+### Lowercase input - should be normalized to uppercase
+GET {{host}}/routing/cze/ita
+Accept: application/json
+
+### Same origin and destination
+GET {{host}}/routing/ITA/ITA
+Accept: application/json
+
+### Longer route - Portugal to Russia
+GET {{host}}/routing/PRT/RUS
+Accept: application/json
+
+### No land route exists - island country (expects HTTP 400)
+GET {{host}}/routing/ISL/ITA
+Accept: application/json
+
+### Invalid country code (expects HTTP 400 or error)
+GET {{host}}/routing/XXX/ITA
+Accept: application/json
+
+### Missing destination (expects HTTP 404)
+GET {{host}}/routing/CZE
+Accept: application/json
