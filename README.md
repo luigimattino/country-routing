@@ -1,3 +1,7 @@
+![Java](https://img.shields.io/badge/Java-17-orange)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.5-brightgreen)
+![Build](https://img.shields.io/badge/build-maven-blue)
+
 # Country Land Route Calculator
 
 A Spring Boot REST service that calculates the shortest land route between any two countries using BFS on the world border graph.
