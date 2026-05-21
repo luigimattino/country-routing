@@ -1,3 +1,4 @@
+![Build](https://github.com/luigimattino/country-routing/actions/workflows/build.yml/badge.svg)
 ![Java](https://img.shields.io/badge/Java-17-orange)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.5-brightgreen)
 ![Build](https://img.shields.io/badge/build-maven-blue)
